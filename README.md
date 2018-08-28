@@ -7,6 +7,9 @@ Steps to follow:
     dmesg | grep -i scsi
    (This will provide your WD Passport drive name)
    
+   ![screenshot from 2018-08-28 06-11-54](https://user-images.githubusercontent.com/42756579/44694630-3835e680-aa8c-11e8-8163-14d51ca14337.png)
+
+   
    Example : In my case its "sdb" (See the line [sdb] Attached SCSI disk above the WD My Passport)
 3. Download the code zip file 
 4. Unzip the files downloaded in the Download folder
@@ -24,7 +27,7 @@ Steps to follow:
    Then go to Download and Build 
    Then scroll down to download 1.42 --- sg3-utils_1.42-0.1_i386.deb (for 32 bit system) or sg3-utils_1.42-0.1_amd64.deb (for 64 bit system) and install it by just opening it.
   
-  In case link expires refer my github link for sg3_utils -- 
+  In case link expires refer my github link for sg3_utils -- https://github.com/geekhaidar/sg3_utils_WD
   
 7. sudo sg_raw -s 40 -i password.bin /dev/sdb c1 e1 00 00 00 00 00 00 28 00
    (Note : Instead of "sdb" enter the name of your WD as acquired in Step 2)
