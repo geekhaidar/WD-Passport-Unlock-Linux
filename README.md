@@ -14,11 +14,10 @@ Steps to follow:
 3. Download the code zip file 
 4. Unzip the files downloaded in the Download folder
 5. Type in Terminal :
-    cd Downloads/
-    cd WD-Passport-Unlock-Linux-master/
-    ./cookpw.py THEPASSWORD >password.bin
-    chmod u+x cookpw.py
-    ./cookpw.py THEPASSWORD >password.bin
+*    cd Downloads/
+*    cd WD-Passport-Unlock-Linux-master/
+*    chmod u+x cookpw.py
+*    ./cookpw.py THEPASSWORD >password.bin
     
   (Note: Enter your Password instead of THEPASSWORD. Its done twice since you will get an error after running once)
 6. Install 'sg3_utils' package for your distro depends on the distro you use !
