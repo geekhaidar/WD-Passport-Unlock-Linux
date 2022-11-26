@@ -1,5 +1,5 @@
 # Unlocking WD Passport Hard Disk on Linux/ Ubuntu Operating System
-
+(Also works for WD My Book and most other WD external hard derive with encrytion)
 Steps to follow:
 
 1. **Open Terminal**
@@ -10,9 +10,6 @@ Steps to follow:
    (This will provide your WD Passport drive name)
    
    ![screenshot from 2018-08-28 06-11-54](https://user-images.githubusercontent.com/42756579/44694630-3835e680-aa8c-11e8-8163-14d51ca14337.png)
-
-   
-   Example : In my case its "sdb" (See the line [sdb] Attached SCSI disk above the WD My Passport)
 3. **Download and decompress the code file**
 4. **Enter the decompressed directory in the terminal**
 5. **Install 'sg3_utils' package for your distro depends on the distro you use!**
@@ -38,6 +35,9 @@ Steps to follow:
     ```
     ./chgpw.sh [device] [old password] [new password]
     ```
+    Example: In my case its "sdb" (See the line [sdb] Attached SCSI disk above the WD My Passport)
+    ```
+    ./chgpw.sh /dev/sdb foo bar
+    ```
 7. **Enter your sudo password**
 8. **You will get an output : "SCSI Status : Good" on being successful**
-   
