@@ -1,5 +1,6 @@
 # Unlocking WD Passport Hard Disk on Linux/ Ubuntu Operating System
 (Also works for WD My Book and most other WD external hard derive with encrytion)
+
 Steps to follow:
 
 1. **Open Terminal**
